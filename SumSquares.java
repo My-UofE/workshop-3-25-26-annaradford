@@ -5,6 +5,7 @@ public class SumSquares {
                 // Declare Scanner object
         Scanner in = new Scanner(System.in);
         int sum = 0;
+        int i;
 
         // Prompt for input
         System.out.print("Enter your name: ");
@@ -23,9 +24,11 @@ public class SumSquares {
         
         System.out.print("Please enter the end value: ");
         int endNum = in.nextInt();
-
-        for (int i = startNum; i <= endNum; i++) {
+        
+        i = startNum;
+        while (i <= endNum) {
             sum += i * i;
+            i++;
         }
 
         System.out.println("Sum of squares from " + startNum + " to " + endNum + ":");
